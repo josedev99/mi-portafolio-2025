@@ -1,0 +1,4 @@
+background: #0a2640
+background-cart; #445f78
+background-button: #65e4a3
+secondary-color: #1c3d5b
