@@ -21,6 +21,7 @@
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendor/sweetalert2/sweetalert2.min.css">
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
@@ -66,7 +67,7 @@
                         <h2>José Deodanes</h2>
                         <p class="lead">Soy un desarrollador full stack, con 2 años de experiencia en el desarrollo de aplicaciones web</p>
                         <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
-                            <a href="#portfolio" class="btn btn-primary">Ver proyectos</a>
+                            <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
                         </div>
                         <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
                             <div class="stat-item">
@@ -454,11 +455,11 @@
                         <div class="contact-form card" data-aos="fade-up" data-aos-delay="300">
                             <div class="card-body p-3 p-lg-3">
 
-                                <form action="#" method="post" class="php-email-form">
+                                <form action="#" method="post" id="form-contacto">
                                     <div class="row gy-4">
 
                                         <div class="col-12">
-                                            <input type="text" name="name" class="form-control" placeholder="Nombre completo" required="">
+                                            <input type="text" name="name" class="form-control" id="fullname_contact" placeholder="Nombre completo" required="">
                                         </div>
 
                                         <div class="col-12 ">
@@ -466,15 +467,15 @@
                                         </div>
 
                                         <div class="col-12">
-                                            <input type="text" class="form-control" name="subject" placeholder="Asunto" required="">
+                                            <input type="text" class="form-control" name="subject" id="subject_contact" placeholder="Asunto" required="">
                                         </div>
 
                                         <div class="col-12">
-                                            <textarea class="form-control" name="message" rows="6" placeholder="Mensaje" required=""></textarea>
+                                            <textarea class="form-control" name="message" rows="6" id="message_contact" placeholder="Mensaje" required=""></textarea>
                                         </div>
 
                                         <div class="col-12 text-center">
-                                            <button type="submit" class="btn btn-submit w-100">Submit Message</button>
+                                            <button type="submit" class="btn btn-submit w-100">Enviar mensaje</button>
                                         </div>
 
                                     </div>
@@ -517,9 +518,11 @@
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/sweetalert2/sweetalert2.all.min.js"></script>
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/form_contacto.js"></script>
 
 </body>
 
